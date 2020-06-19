@@ -1,0 +1,362 @@
+.wrapper {
+  margin: 0 auto;
+  width: 375px;
+  line-height: 1.6;
+}
+a {
+  text-decoration:none;
+  color: #333;
+}
+/*** ここからヘッダー  ****************************/
+header {
+  background: #eee;
+  height: 74px;
+  box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.1);
+
+}
+.header_contents {
+  position: fixed;
+      top: 0;
+      background: #eee;
+      width: 375px;
+      height: 48px;
+      color: #707070;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 26px;
+}
+.header_contents p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header_contents span {
+  font-size: 20px;
+}
+/*** ここまでヘッダー  ****************************/
+/*** ここからコンテンツ  ****************************/
+/* 曜日*/
+.contents_number_event_wrap {
+  line-height: 1;
+}
+.contents_week {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+  height: 34px;
+  line-height: 34px;
+}
+.saturday {
+  color: #069BE5;
+}
+.sunday {
+  color: #BF0909;
+}
+/* 曜日ここまで*/
+.contents_number ul {
+  display: flex;
+  justify-content: space-around;
+}
+.contents_number li {
+  border: 1px solid #C0C0C0;
+  width: 53.5px;
+  height: 90px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents_number li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contents_number_event {
+  display: block;
+  font-size: 12px;
+  background: #D2EFFD;
+  color: #333;
+  border: 1px solid #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.next_month {
+  color:#C0C0C0;
+}
+span.today_circle_color{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background:#069BE5;
+  color: #fff;
+  text-align:center;
+  line-height: 22px;
+
+}
+/*** ここまでコンテンツ  ****************************/
+
+/*** calender_detail.html  ****************************/
+.contents_timeline{
+  display: flex;
+  width: 340px;
+  line-height: 1.4;
+  /*background: red;*/
+  margin: 20px auto 4px;
+  justify-content: space-between;
+}
+.contents_timeline_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32px;
+}
+/* タイムライン曜日＆日付 */
+.contents_timeline_contents {
+  width: calc(100% - 42px);
+}
+
+.contents_timeline_title_number {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+/*月*/
+.contents_timeline_title_week {
+  font-size: 12px;
+  margin-bottom: 4px;
+
+}
+.derail_today_month {
+  color: #069BE5;
+}
+.derail_today_number {
+  background: #069BE5;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+}
+.contents_timeline_wrap {
+  width: 292px;
+  background: #D2EFFD;
+  padding: 6px 4px;
+  margin-bottom: 6px;
+  display: block;
+}
+.contents_timeline_contents_title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.contents_timeline_contents_time {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.contents_timeline_contents_place {
+  font-size: 12px;
+}
+/*now_time_line*/
+img.timeline {
+  position: relative;
+  top: -2px;
+}
+.under_img {
+  margin-bottom: 0;
+}
+/***** カレンダー詳細 ******************************************/
+.campaign {
+  background: #4C08B7;
+  width: 375px;
+  height: 84px;
+  box-shadow: none;
+}
+.campaign_title {
+  color: #fff;
+  width: 347px;
+  margin: 0 auto;
+
+}
+.campaign_title_title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 14px;
+}
+.campaign_title_name {
+  font-size: 12px;
+}
+/* event_contents */
+.event_contents {
+  width: 347px;
+  margin: 0 auto;
+  margin-top: 20px;
+  /*padding-top: 84px;*/
+}
+.event_contents_place {
+  display: flex;
+  line-height: 1.6;
+}
+.event_contents_place span {
+  color: #707070;
+  width: 28px;
+  text-align: left;
+  margin-right: 14px;
+}
+i.fa-map-marker-alt, i.fa-user-tie, i.fa-users {
+  font-size: 20px;
+}
+.event_contents_place p {
+  font-size: 14px;
+}
+/*イベンター*/
+.event_contents_eventer_title {
+  display: flex;
+  margin-top: 40px;
+}
+ .event_contents_eventer_title span {
+   color: #707070;
+   width: 28px;
+   text-align: left;
+   margin-right: 6px;
+ }
+ .event_contents_eventer_title p {
+   font-weight: bold;
+ }
+ .event_contents_eventer_people {
+   display: flex;
+   flex-flow: column;
+   margin-top: 14px;
+   width: 320px;
+   margin-left: 37px;
+ }
+ .event_contents_eventer_people_1, .event_contents_eventer_people_2 {
+   display: flex;
+   align-items: center;
+   line-height: 1.6;
+ }
+  .event_contents_eventer_people_1 {
+    margin-right: 40px;
+    margin-bottom: 14px;
+  }
+ .event_contents_eventer_people img {
+   margin-right: 8px;
+ }
+
+ /*現在の参加者*/
+ .contents_entry_title {
+   display: flex;
+   margin-top: 20px;
+  margin-bottom: 14px;
+ }
+ .contents_entry_title span {
+   color: #707070;
+   width: 28px;
+   text-align: left;
+   margin-right: 10px;
+ }
+ .contents_entry_title p{
+   font-weight: bold;
+ }
+
+ .contents_entry_people_1 {
+   display: flex;
+   align-items: center;
+   width: 320px;
+   margin-left: 37px;
+   margin-top: 14px;
+ }
+ .contents_entry_people_1 img {
+   margin-right: 8px;
+ }
+ /*送信ボタンダイアログ*/
+ .join {
+   width: 375px;
+   padding-top: 10px;
+   padding-bottom: 28px;
+   background: #fff;
+   position: fixed;
+   bottom: 0;
+   box-shadow: 0 -5px 3px #eee;
+ }
+ .join p {
+   text-align: center;
+ }
+ .join_button_box {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10px;
+ }
+ .join_button {
+  display : inline-block;
+  border-radius : 4px;
+  font-size : 14px;
+  text-align : center;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  background: #069BE5;
+  color : #ffffff;
+  border: none;
+}
+.join_no {
+  background: #fff;
+  color: #333;
+  border: solid #333 2px;
+}
+.join_yes {
+  background: #069BE5;
+  color: #fff;
+}
+/** 回答YES *******************************/
+.answer_body {
+  background-image: url(images/answer_join_back.png);
+  background-size: cover;
+}
+.answer_box {
+  width: 346px;
+  height: 204px;
+  background: #fff;
+  margin: 200px auto;
+  text-align: center;
+}
+.answer_box_head {
+  background: #4C08B7;
+  width: 346px;
+  height: 68px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.answer_box_answer {
+  text-align: center;
+  margin-top: 20px;
+}
+.answer_box_answer span {
+  font-size: 20px;
+}
+.answer_return{
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  width: 130px;
+  height: 40px;
+  line-height: 36px;
+  background: #fff;
+margin-top: 14px;
+border: 1px solid #333;
+}
