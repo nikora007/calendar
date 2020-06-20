@@ -325,7 +325,7 @@ i.fa-map-marker-alt, i.fa-user-tie, i.fa-users {
 }
 .answer_box {
   width: 346px;
-  height: 204px;
+  height: 270px;
   background: #fff;
   margin: 200px auto;
   text-align: center;
@@ -340,6 +340,20 @@ i.fa-map-marker-alt, i.fa-user-tie, i.fa-users {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.answer_box_name {
+  display: block;
+  padding-top: 20px;
+}
+.join_text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #069BE5;
+}
+.join_no_text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #BF0909;
 }
 .answer_box_answer {
   text-align: center;
