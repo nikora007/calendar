@@ -319,9 +319,15 @@ i.fa-map-marker-alt, i.fa-user-tie, i.fa-users {
   color: #fff;
 }
 /** 回答YES *******************************/
-.answer_body {
+
+.answer_wrap {
   background-image: url(images/answer_join_back.png);
-  background-size: cover;
+  background-size: 375px;
+  width: 375px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  background-position: center top;
 }
 .answer_box {
   width: 346px;
